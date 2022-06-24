@@ -1,0 +1,159 @@
+body {
+    background-color: #131516;
+    margin: 0;
+  }
+  #mySidenavmenu button {
+    position: absolute; /* Position them relative to the browser window */
+     /* Position them outside of the screen */
+    bottom: 90%;
+    transition: 0.5s; /* Add transition on hover */
+    padding: 15px; /* 15px padding */
+    width: 50px; /* Set a specific width */
+    color: white; /* White text color */
+    z-index: 1;
+    border-radius: 0 15px 15px 0; /* Rounded corners on the top right and bottom right side */
+  }
+  
+  #about:hover {
+     left: -1px /* 0; On mouse-over, make the elements appear as they should */
+  }
+  
+  /* The about link: 20px from the top with a green background */
+  #about {
+    left: -45px;
+    top: 20px;
+    background-color: #111;
+  }
+
+  #info {
+    position: absolute;
+    padding: 8px 8px 8px 8px;
+    border: 2px solid #818181;
+    background-color: #111;
+    right: 25px;
+
+  }
+  
+  .button {
+    padding: 14px 40px;
+    text-align: absolute;
+    display: block;
+    color: white;
+    font-size: 15px;
+    width: 100%;
+    transition-duration: 0.4s;
+  } 
+  .button:hover {
+    background-color: #555555;
+    color: white;
+  }
+  ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 20%;
+    height: 100%; /* Full height */
+    position: fixed; /* Make it stick, even on scroll */
+    overflow: auto; /* Enable scrolling if the sidenav has too much content */
+  } /* Teste de ladinho vamo que vamo */
+  .sidenav {
+    height: 100vh; /* 100% Full-height */
+    width: 0; /* 0 width - change this with JavaScript */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color: #111; /* Black*/
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 0px; /* Place content 60px from the top */
+    transition: 0.5s; /* 0.5 second transition effect to slide in the sidenav */
+  }
+  
+  /* The navigation menu links */
+  .sidenav a {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 18px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+  }
+  
+  .sidenav h2 {
+    padding: 8px 8px 8px 32px;
+    text-decoration: none;
+    font-size: 25px;
+    color: #818181;
+    display: block;
+    transition: 0.3s;
+    font-family: 'Montserrat', sans-serif;
+    font-weight:600
+  }
+  
+  /* When you mouse over the navigation links, change their color */
+  .sidenav a:hover {
+    color: #f1f1f1;
+  }
+  
+  /* Position and style the close button (top right corner) */
+  .sidenav .closebtn {
+    position: absolute;
+    top: 0;
+    right: 25px;
+    font-size: 36px;
+    margin-left: 50px;
+    border-radius: 15px;
+  }
+  
+  /* Style page content - use this if you want to push the page content to the right when you open the side navigation */
+  #main {
+    transition: margin-left .5s;
+  }
+
+  /* On smaller screens, where height is less than 450px, change the style of the sidenav (less padding and a smaller font size) */
+  @media screen and (max-height: 450px) {
+    .sidenav {padding-top: 15px;}
+    .sidenav a {font-size: 18px;}
+  }
+
+  .popup {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    transition-duration: 0.4s;
+  }
+  
+  /* Modal Content/Box */
+  .popup-content {
+    background-color: #111;
+    margin: 15% auto; /* 15% from the top and centered */
+    padding: 20px;
+    border: 1px solid #888;
+    width: 45vh; /* Could be more or less, depending on screen size */
+    transition-duration: 0.4s;
+    padding-bottom: 1%;
+    font-style: #818181;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: black;
+    text-decoration: none;
+    cursor: pointer;
+  }

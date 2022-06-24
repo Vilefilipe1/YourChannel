@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<meta name="viewport" content="width=device-width, initial-scale=1.0"> 
+<script src="https://kit.fontawesome.com/62de3502c5.js" crossorigin="anonymous"></script>
+<html>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet"> 
+  <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet"> 
+  <link rel="stylesheet" href="style.css">
+<div id="mySidenav" class="sidenav">
+  <h2>Music</h2>
+  <a id="change-video-lofi" href="#">Lofi Hip Hop Radio</a>
+  <a id="change-video-baroque" href="#">Baroque Radio</a>
+  <a id="change-video-jazz" href="#">Coffee Jazz Radio</a>
+  <h2>Brazil</h2>
+  <a id="change-video-cblol" href="#">CBLOL</a>
+  <a id="change-video-sbt" href="#">SBT</a>
+  <a id="change-video-recordnews" href="#">Record News</a>
+  <h2>Japan</h2>
+  <a id="change-video-japanews" href="#">JapaNews24</a>
+  <a id="change-video-japawalk" href="#">Japan Walk Arrange 24/7</a>
+  <a id="change-video-japaakasaka" href="#">Tokyo Live Camera - Akasaka</a>
+  <a id="change-video-learnjapane" href="#">Learn Japanese</a>  
+  <h2>Extras</h2>
+  <a id="change-video-voxchannel" href="#">Vox</a>
+  <div>
+    <button href="#" id="info" class="fa-solid fa-circle-info"></button>
+    <div id="mypopup" class="popup">
+
+        <!-- Modal content -->
+        <div class="popup-content">
+          <span class="close">&times;</span>
+          <p style="color: #818181;font-family: 'Montserrat', sans-serif;font-weight:600; font-size: 20px">Hi!</p>
+          <p style="color: #818181;font-family: 'Montserrat', sans-serif">This website has been made with the intention to be a easy way to watch Youtube's livestreams, so any content seen here has no direct connection with the owner of the website (besides the url). Some code is from W3School.</p>
+          <p style="color: #818181;font-family: 'Montserrat', sans-serif">If you have any suggetions, you can send me an e-mail on vile.pessoal@gmail.com.</p>
+
+        </div>
+      
+      </div>
+  </div>
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+  <a></a>
+</div>
+
+<div id="main">
+  <body> 
+  <section>
+      <div id="mySidenavmenu">
+        <button onclick="openNav()" href="#" id="about" class="fa-solid fa-bars"></button>
+      </div> 
+      <div style="height:100vh;min-width:100vh;overflow:hidden;position:relative">
+          <iframe id="ytVideo" src="https://www.youtube.com/embed/PNRArjhmJRk?autoplay=0" height="100%" width="100%" allowfullscreen allow="autoplay;fullscreen" title="Iframe Example" ></iframe> 
+      </div>
+  </section>
+  </body>
+</div>
+
+
+<script type="text/javascript">
+  
+    document.getElementById("change-video-cblol").onclick = function() {
+        document.getElementById('ytVideo').src = "https://www.youtube.com/embed/PNRArjhmJRk?autoplay=1";}
+    document.getElementById("change-video-lofi").onclick = function() {
+        document.getElementById('ytVideo').src = "https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1";}
+    document.getElementById("change-video-baroque").onclick = function() {
+        document.getElementById('ytVideo').src = "https://www.youtube.com/embed/2gO1v2GPMFk?autoplay=1";}
+    document.getElementById("change-video-jazz").onclick = function() {
+        document.getElementById('ytVideo').src = "https://www.youtube.com/embed/fEvM-OUbaKs?autoplay=1";}
+    document.getElementById("change-video-japanews").onclick = function() {
+        document.getElementById('ytVideo').src = "https://www.youtube.com/embed/coYw-eVU0Ks?autoplay=1";}
+    document.getElementById("change-video-japawalk").onclick = function() {
+        document.getElementById('ytVideo').src = "https://www.youtube.com/embed/AiuHc7P1CBM?autoplay=1";}
+    document.getElementById("change-video-sbt").onclick = function() {
+        document.getElementById('ytVideo').src = "https://www.youtube.com/embed/4LIuozziwXg?autoplay=1";}
+    document.getElementById("change-video-recordnews").onclick = function() {
+        document.getElementById('ytVideo').src = "https://www.youtube.com/embed/OxMAupCG1SI?autoplay=1";}
+    document.getElementById("change-video-japaakasaka").onclick = function() {
+        document.getElementById('ytVideo').src = "https://www.youtube.com/embed/QlkmX8JGtCc?autoplay=1";}
+    document.getElementById("change-video-learnjapane").onclick = function() {
+        document.getElementById('ytVideo').src = "https://www.youtube.com/embed/fO4T5CoGkm4?autoplay=1";}
+    document.getElementById("change-video-voxchannel").onclick = function() {
+        document.getElementById('ytVideo').src = "https://www.youtube.com/embed/gvpE6615qec?autoplay=1";}
+        ;
+    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
+    var butao = document.getElementById("info");
+    var popup = document.getElementById("mypopup")
+    var span = document.getElementsByClassName("close")[0];
+
+    butao.onclick = function() {
+    popup.style.display = "block";
+    }
+
+// When the user clicks on <span> (x), close the modal
+span.onclick = function() {
+  popup.style.display = "none";
+}
+
+// When the user clicks anywhere outside of the modal, close it
+window.onclick = function(event) {
+  if (event.target == popup) {
+    popup.style.display = "none";
+  }
+} 
+
+    butao.onclick = function() {
+        popup.style.display = "block"
+    }
+
+function openNav() {
+  document.getElementById("mySidenav").style.width = "350px";
+  document.getElementById("main").style.marginLeft = "350px";
+  document.getElementById("about").style.left = "350px";
+  document.getElementById("about").onclick = closeNav;
+  document.getElementById("about").className = "fa-solid fa-xmark";
+  
+}
+
+/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
+function closeNav() {
+  document.getElementById("mySidenav").style.width = "0";
+  document.getElementById("main").style.marginLeft = "0";
+  document.getElementById("about").style.left = "-45px";
+  document.getElementById("about").onclick = openNav;
+  document.getElementById("about").className = "fa-solid fa-bars";
+} 
+</script>
+
+</html> 
