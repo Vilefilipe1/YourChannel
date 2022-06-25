@@ -57,8 +57,8 @@
         <button onclick="openNav()" href="#" id="about" class="fa-solid fa-bars"></button>
       </div> 
       <div style="height:100vh;min-width:100vh;overflow:hidden;position:relative">
-          <iframe id="twitchVideo" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display: block;" src="https://player.twitch.tv/?channel=cblol&parent=vilefilipe1.github.io" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  width="100%" height="100%" frameborder="0"><small>Twitch embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe>
-          <iframe id="ytVideo" src="https://www.twitch.tv/embed/lcs" height="100%" width="100%" allowfullscreen allow="autoplay;fullscreen" title="Iframe Example" ></iframe>
+          <iframe id="twitchVideo" style="position: absolute; top: 0px; left: 0px; width: 100%; height: 100%; display: block;" src="" allow="accelerometer; autoplay; encrypted-media; gyroscope; picture-in-picture; fullscreen"  width="100%" height="100%" frameborder="0"><small>Twitch embedding powered by <a href="https://embed.tube">embed.tube</a></small></iframe>
+          <iframe id="ytVideo" src="" height="100%" width="100%" allowfullscreen allow="autoplay;fullscreen" title="Iframe Example" ></iframe>
       </div>
   </section>
   </body>
@@ -67,56 +67,43 @@
 <script type="text/javascript">
   
     document.getElementById("change-video-cblol").onclick = function() {
-      document.getElementById('twitchVideo').style.display = "block";
-      document.getElementById('ytVideo').style.display = "none";
-      document.getElementById('twitchVideo').src = "ttps://player.twitch.tv/?channel=cblol&parent=vilefilipe1.github.io";}
+      document.getElementById('ytVideo').src = "";
+      document.getElementById('twitchVideo').src = "https://player.twitch.tv/?channel=cblol&parent=vilefilipe1.github.io";}
     document.getElementById("change-video-xqc").onclick = function() {
-      document.getElementById('twitchVideo').style.display = "block";
-      document.getElementById('ytVideo').style.display = "none";
-      document.getElementById('twitchVideo').src = "ttps://player.twitch.tv/?channel=xqc&parent=vilefilipe1.github.io";}
+      document.getElementById('ytVideo').src = "";
+      document.getElementById('twitchVideo').src = "https://player.twitch.tv/?channel=xqc&parent=vilefilipe1.github.io";}
     document.getElementById("change-video-cellbit").onclick = function() {
-      document.getElementById('twitchVideo').style.display = "block";
-      document.getElementById('ytVideo').style.display = "none";
-      document.getElementById('twitchVideo').src = "ttps://player.twitch.tv/?channel=cellbit&parent=vilefilipe1.github.io";}
+      document.getElementById('ytVideo').src = "";
+      document.getElementById('twitchVideo').src = "https://player.twitch.tv/?channel=cellbit&parent=vilefilipe1.github.io";}
     document.getElementById("change-video-lofi").onclick = function() {
-      document.getElementById('twitchVideo').style.display = "none";
-      document.getElementById('ytVideo').style.display = "block";
+      document.getElementById('twitchVideo').src = "";
       document.getElementById('ytVideo').src = "https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1";}
     document.getElementById("change-video-baroque").onclick = function() {
-      document.getElementById('twitchVideo').style.display = "none"
-      document.getElementById('ytVideo').style.display = "block";
+      document.getElementById('twitchVideo').src = "";
       document.getElementById('ytVideo').src = "https://www.youtube.com/embed/2gO1v2GPMFk?autoplay=1";}
     document.getElementById("change-video-jazz").onclick = function() {
-      document.getElementById('twitchVideo').style.display = "none";
-      document.getElementById('ytVideo').style.display = "block";
+      document.getElementById('twitchVideo').src = "";
       document.getElementById('ytVideo').src = "https://www.youtube.com/embed/fEvM-OUbaKs?autoplay=1";}
     document.getElementById("change-video-japanews").onclick = function() {
-      document.getElementById('twitchVideo').style.display = "none";
-      document.getElementById('ytVideo').style.display = "block";
+      document.getElementById('twitchVideo').src = "";
       document.getElementById('ytVideo').src = "https://www.youtube.com/embed/coYw-eVU0Ks?autoplay=1";}
     document.getElementById("change-video-japawalk").onclick = function() {
-      document.getElementById('twitchVideo').style.display = "none";
-      document.getElementById('ytVideo').style.display = "block";
+      document.getElementById('twitchVideo').src = "";
       document.getElementById('ytVideo').src = "https://www.youtube.com/embed/AiuHc7P1CBM?autoplay=1";}
     document.getElementById("change-video-sbt").onclick = function() {
-      document.getElementById('twitchVideo').style.display = "none";
-      document.getElementById('ytVideo').style.display = "block";
+      document.getElementById('twitchVideo').src = "";
       document.getElementById('ytVideo').src = "https://www.youtube.com/embed/4LIuozziwXg?autoplay=1";}
     document.getElementById("change-video-recordnews").onclick = function() {
-      document.getElementById('twitchVideo').style.display = "none";
-      document.getElementById('ytVideo').style.display = "block";
+      document.getElementById('twitchVideo').src = "";
       document.getElementById('ytVideo').src = "https://www.youtube.com/embed/OxMAupCG1SI?autoplay=1";}
     document.getElementById("change-video-japaakasaka").onclick = function() {
-      document.getElementById('twitchVideo').style.display = "none";
-      document.getElementById('ytVideo').style.display = "block";
+      document.getElementById('twitchVideo').src = "";
       document.getElementById('ytVideo').src = "https://www.youtube.com/embed/QlkmX8JGtCc?autoplay=1";}
     document.getElementById("change-video-learnjapane").onclick = function() {
-      document.getElementById('twitchVideo').style.display = "none";
-      document.getElementById('ytVideo').style.display = "block";
+      document.getElementById('twitchVideo').src = "";
       document.getElementById('ytVideo').src = "https://www.youtube.com/embed/fO4T5CoGkm4?autoplay=1";}
     document.getElementById("change-video-voxchannel").onclick = function() {
-      document.getElementById('twitchVideo').style.display = "none";
-      document.getElementById('ytVideo').style.display = "block";
+      document.getElementById('twitchVideo').src = "";
       document.getElementById('ytVideo').src = "https://www.youtube.com/embed/gvpE6615qec?autoplay=1";};
 
     /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
