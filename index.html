@@ -68,44 +68,31 @@
 <script type="text/javascript">
   
     document.getElementById("change-video-cblol").onclick = function() {
-      document.getElementById('ytVideo').src = "";
-      document.getElementById('twitchVideo').src = "https://player.twitch.tv/?channel=cblol&parent=vilefilipe1.github.io";}
+      ytOFFtwitchON("https://player.twitch.tv/?channel=cblol&parent=vilefilipe1.github.io");}
     document.getElementById("change-video-xqc").onclick = function() {
-      document.getElementById('ytVideo').src = "";
-      document.getElementById('twitchVideo').src = "https://player.twitch.tv/?channel=xqc&parent=vilefilipe1.github.io";}
+      ytOFFtwitchON("https://player.twitch.tv/?channel=xqc&parent=vilefilipe1.github.io");}
     document.getElementById("change-video-cellbit").onclick = function() {
-      document.getElementById('ytVideo').src = "";
-      document.getElementById('twitchVideo').src = "https://player.twitch.tv/?channel=cellbit&parent=vilefilipe1.github.io";}
+      ytOFFtwitchON("https://player.twitch.tv/?channel=cellbit&parent=vilefilipe1.github.io")}
     document.getElementById("change-video-lofi").onclick = function() {
-      document.getElementById('twitchVideo').src = "";
-      document.getElementById('ytVideo').src = "https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1";}
+      ytONtwitchOFF("https://www.youtube.com/embed/5qap5aO4i9A?autoplay=1")}
     document.getElementById("change-video-baroque").onclick = function() {
-      document.getElementById('twitchVideo').src = "";
-      document.getElementById('ytVideo').src = "https://www.youtube.com/embed/2gO1v2GPMFk?autoplay=1";}
+      ytONtwitchOFF("https://www.youtube.com/embed/2gO1v2GPMFk?autoplay=1")}
     document.getElementById("change-video-jazz").onclick = function() {
-      document.getElementById('twitchVideo').src = "";
-      document.getElementById('ytVideo').src = "https://www.youtube.com/embed/fEvM-OUbaKs?autoplay=1";}
+      ytONtwitchOFF("https://www.youtube.com/embed/fEvM-OUbaKs?autoplay=1")}
     document.getElementById("change-video-japanews").onclick = function() {
-      document.getElementById('twitchVideo').src = "";
-      document.getElementById('ytVideo').src = "https://www.youtube.com/embed/coYw-eVU0Ks?autoplay=1";}
+      ytONtwitchOFF("https://www.youtube.com/embed/coYw-eVU0Ks?autoplay=1")}
     document.getElementById("change-video-japawalk").onclick = function() {
-      document.getElementById('twitchVideo').src = "";
-      document.getElementById('ytVideo').src = "https://www.youtube.com/embed/AiuHc7P1CBM?autoplay=1";}
+      ytONtwitchOFF("https://www.youtube.com/embed/AiuHc7P1CBM?autoplay=1")}
     document.getElementById("change-video-sbt").onclick = function() {
-      document.getElementById('twitchVideo').src = "";
-      document.getElementById('ytVideo').src = "https://www.youtube.com/embed/4LIuozziwXg?autoplay=1";}
+      ytONtwitchOFF("https://www.youtube.com/embed/4LIuozziwXg?autoplay=1")}
     document.getElementById("change-video-recordnews").onclick = function() {
-      document.getElementById('twitchVideo').src = "";
-      document.getElementById('ytVideo').src = "https://www.youtube.com/embed/OxMAupCG1SI?autoplay=1";}
+      ytONtwitchOFF("https://www.youtube.com/embed/OxMAupCG1SI?autoplay=1")}
     document.getElementById("change-video-japaakasaka").onclick = function() {
-      document.getElementById('twitchVideo').src = "";
-      document.getElementById('ytVideo').src = "https://www.youtube.com/embed/QlkmX8JGtCc?autoplay=1";}
+      ytONtwitchOFF("https://www.youtube.com/embed/QlkmX8JGtCc?autoplay=1")}
     document.getElementById("change-video-learnjapane").onclick = function() {
-      document.getElementById('twitchVideo').src = "";
-      document.getElementById('ytVideo').src = "https://www.youtube.com/embed/fO4T5CoGkm4?autoplay=1";}
+      ytONtwitchOFF("https://www.youtube.com/embed/fO4T5CoGkm4?autoplay=1")}
     document.getElementById("change-video-voxchannel").onclick = function() {
-      document.getElementById('twitchVideo').src = "";
-      document.getElementById('ytVideo').src = "https://www.youtube.com/embed/gvpE6615qec?autoplay=1";};
+      ytONtwitchOFF("https://www.youtube.com/embed/gvpE6615qec?autoplay=1")};
 
     /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
     var butao = document.getElementById("info");
@@ -131,6 +118,16 @@ window.onclick = function(event) {
     butao.onclick = function() {
         popup.style.display = "block"
     }
+
+function ytONtwitchOFF(url) {
+  document.getElementById('twitchVideo').src = "";
+  document.getElementById('ytVideo').src = url;
+}
+
+function ytOFFtwitchON(url) {
+  document.getElementById('ytVideo').src = "";
+  document.getElementById('twitchVideo').src = url;
+}
 
 function openNav() {
   document.getElementById("mySidenav").style.width = "350px";
