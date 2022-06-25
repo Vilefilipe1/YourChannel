@@ -14,19 +14,19 @@
   <a id="change-video-baroque" href="#">Baroque Radio</a>
   <a id="change-video-jazz" href="#">Coffee Jazz Radio</a>
   <h2>USA</h2>
-  <a id="change-video-xqc" onclick="ytOFFtwitchON('https://player.twitch.tv/?channel=xqc&parent=vilefilipe1.github.io')" href="#">xQc</a>
+  <a id="change-video-xqc" onclick="tw('https://player.twitch.tv/?channel=xqc&parent=vilefilipe1.github.io')" href="#">xQc</a>
   <h2>Brazil</h2>
-  <a id="change-video-cblol" onclick="ytOFFtwitchON('https://player.twitch.tv/?channel=cblol&parent=vilefilipe1.github.io')" href="#">CBLOL</a>
-  <a id="change-video-cellbit" href="#">cellbit</a>
-  <a id="change-video-sbt" href="#">SBT</a>
-  <a id="change-video-recordnews" href="#">Record News</a>
+  <a id="change-video-cblol" onclick="tw('https://player.twitch.tv/?channel=cblol&parent=vilefilipe1.github.io')" href="#">CBLOL</a>
+  <a id="change-video-cellbit" onclick="tw('https://player.twitch.tv/?channel=cellbit&parent=vilefilipe1.github.io')" href="#">cellbit</a>
+  <a id="change-video-sbt" onclick="yt('https://www.youtube.com/embed/4LIuozziwXg?autoplay=1')" href="#">SBT</a>
+  <a id="change-video-recordnews" onclick="yt('https://www.youtube.com/embed/OxMAupCG1SI?autoplay=1')" href="#">Record News</a>
   <h2>Japan</h2>
-  <a id="change-video-japanews" onclick="" href="#">JapaNews24</a>
-  <a id="change-video-japawalk" href="#">Japan Walk Arrange 24/7</a>
-  <a id="change-video-japaakasaka" href="#">Tokyo Live Camera - Akasaka</a>
-  <a id="change-video-learnjapane" href="#">Learn Japanese</a>  
+  <a id="change-video-japanews" onclick="yt('https://www.youtube.com/embed/coYw-eVU0Ks?autoplay=1')" href="#">JapaNews24</a>
+  <a id="change-video-japawalk" onclick="yt('https://www.youtube.com/embed/AiuHc7P1CBM?autoplay=1')" href="#">Japan Walk Arrange 24/7</a>
+  <a id="change-video-japaakasaka" onclick="yt('https://www.youtube.com/embed/QlkmX8JGtCc?autoplay=1')" href="#">Tokyo Live Camera - Akasaka</a>
+  <a id="change-video-learnjapane" onclick="yt('https://www.youtube.com/embed/fO4T5CoGkm4?autoplay=1')" href="#">Learn Japanese</a>  
   <h2>Extras</h2>
-  <a id="change-video-voxchannel" href="#">Vox</a>
+  <a id="change-video-voxchannel" onclick="yt('https://www.youtube.com/embed/gvpE6615qec?autoplay=1')" href="#">Vox</a>
   <div>
     <button href="#" id="info" class="fa-solid fa-circle-info"></button>
     <div id="mypopup" class="popup">
@@ -70,7 +70,7 @@
     /* document.getElementById("change-video-cblol").onclick = function() {
       ytOFFtwitchON("https://player.twitch.tv/?channel=cblol&parent=vilefilipe1.github.io");}
     document.getElementById("change-video-xqc").onclick = function() {
-      ytOFFtwitchON("https://player.twitch.tv/?channel=xqc&parent=vilefilipe1.github.io");} */
+      ytOFFtwitchON("https://player.twitch.tv/?channel=xqc&parent=vilefilipe1.github.io");}
     document.getElementById("change-video-cellbit").onclick = function() {
       ytOFFtwitchON("https://player.twitch.tv/?channel=cellbit&parent=vilefilipe1.github.io")}
     document.getElementById("change-video-lofi").onclick = function() {
@@ -92,7 +92,7 @@
     document.getElementById("change-video-learnjapane").onclick = function() {
       ytONtwitchOFF("https://www.youtube.com/embed/fO4T5CoGkm4?autoplay=1")}
     document.getElementById("change-video-voxchannel").onclick = function() {
-      ytONtwitchOFF("https://www.youtube.com/embed/gvpE6615qec?autoplay=1")};
+      ytONtwitchOFF("https://www.youtube.com/embed/gvpE6615qec?autoplay=1")}; */
 
     /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
     var butao = document.getElementById("info");
@@ -119,12 +119,12 @@ window.onclick = function(event) {
         popup.style.display = "block"
     }
 
-function ytONtwitchOFF(url) {
+function yt(url) {
   document.getElementById('twitchVideo').src = "";
   document.getElementById('ytVideo').src = url;
 }
 
-function ytOFFtwitchON(url) {
+function tw(url) {
   document.getElementById('ytVideo').src = "";
   document.getElementById('twitchVideo').src = url;
 }
