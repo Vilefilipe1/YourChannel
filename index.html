@@ -54,12 +54,14 @@
         <button onclick="openNav()" href="#" id="about" class="fa-solid fa-bars"></button>
       </div> 
       <div style="height:100vh;min-width:100vh;overflow:hidden;position:relative">
-          <iframe id="ytVideo" src="https://www.youtube.com/embed/PNRArjhmJRk?autoplay=0" height="100%" width="100%" allowfullscreen allow="autoplay;fullscreen" title="Iframe Example" ></iframe> 
+          <div id="twitch-embed"></div>
+          <!-- <iframe id="ytVideo" src="https://www.twitch.tv/embed/lcs" height="100%" width="100%" allowfullscreen allow="autoplay;fullscreen" title="Iframe Example" ></iframe> -->
       </div>
   </section>
   </body>
 </div>
 
+<script src="https://embed.twitch.tv/embed/v1.js"></script>
 
 <script type="text/javascript">
   
@@ -128,6 +130,14 @@ function closeNav() {
   document.getElementById("about").onclick = openNav;
   document.getElementById("about").className = "fa-solid fa-bars";
 } 
+
+new Twitch.Embed("twitch-embed", {
+        width: "100px",
+        height: "100px",
+        channel: "monstercat",
+        // Only needed if this page is going to be embedded on other websites
+        parent: ["https://vilefilipe1.github.io/YourChannel/"]
+      });
 </script>
 
 </html> 
