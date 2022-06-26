@@ -103,6 +103,14 @@ body {
   .sidenav a:hover {
     color: #f1f1f1;
   }
+
+  .sidenav #yt:hover {
+    color: #c4302b;
+  }
+
+  .sidenav #tw:hover {
+    color: #6441a5;
+  }
   
   /* Position and style the close button (top right corner) */
   .sidenav .closebtn {
