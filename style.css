@@ -2,7 +2,7 @@ body {
     background-color: #131516;
     margin: 0;
   }
-  
+
   #mySidenavmenu button {
     position: absolute; 
     bottom: 90%;
@@ -15,7 +15,7 @@ body {
   }
   
   #about:hover {
-     left: -1px 
+    left: -1px 
   }
   
   #about {
