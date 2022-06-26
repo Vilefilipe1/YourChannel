@@ -14,14 +14,15 @@ body {
     border-radius: 0 15px 15px 0; 
   }
   
-  #about:hover {
-    left: -1px 
-  }
   
   #about {
     left: -45px;
     top: 20px;
     background-color: #111;
+  }
+
+  #about:hover {
+    left: -1px; 
   }
 
   #info {
