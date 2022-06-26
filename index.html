@@ -2,11 +2,14 @@
 <meta name="viewport" content="width=device-width, initial-scale=1.0"> 
 <script src="https://kit.fontawesome.com/62de3502c5.js" crossorigin="anonymous"></script>
 <html>
+
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300&display=swap" rel="stylesheet"> 
   <link href="https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400&display=swap" rel="stylesheet"> 
   <link rel="stylesheet" href="style.css">
+  <script src="script.js" type="text/javascript"></script> 
+  <script src="https://kit.fontawesome.com/62de3502c5.js" crossorigin="anonymous"></script>
 
 <div id="mySidenav" class="sidenav">
   <h2>Music</h2>
@@ -34,17 +37,13 @@
   <div>
     <button href="#" id="info" class="fa-solid fa-circle-info"></button>
     <div id="mypopup" class="popup">
-
-        <!-- Modal content -->
         <div class="popup-content">
           <span class="close">&times;</span>
           <p style="color: #818181;font-family: 'Montserrat', sans-serif;font-weight:600; font-size: 20px">Hi!</p>
           <p style="color: #818181;font-family: 'Montserrat', sans-serif">This website has been made with the intention to be a easy way to watch Youtube's livestreams, so any content seen here has no direct connection with the owner of the website (besides the url). Some code is from W3School.</p>
           <p style="color: #818181;font-family: 'Montserrat', sans-serif">If you have any suggetions, you can send me an e-mail on vile.pessoal@gmail.com.</p>
-
         </div>
-      
-      </div>
+    </div>
   </div>
   <a></a>
   <a></a>
@@ -63,71 +62,10 @@
       </div> 
       <div style="height:100vh;min-width:100vh;overflow:hidden;position:relative">
           <iframe id="twitchVideo" style="position: absolute; top: 0px; left: 0px" src="" allow="picture-in-picture; fullscreen"  width="100%" height="100%" frameborder="0"></iframe>
-          <iframe id="ytVideo" src="" height="100%" width="100%" allowfullscreen allow="autoplay;fullscreen" title="Iframe Example" ></iframe>
+          <iframe id="ytVideo" src="" height="100%" width="100%" allowfullscreen allow="autoplay;fullscreen"></iframe>
       </div>
   </section>
   </body>
 </div>
-
-<script type="text/javascript">
-  
-    /* Set the width of the side navigation to 250px and the left margin of the page content to 250px and add a black background color to body */
-    var butao = document.getElementById("info");
-    var popup = document.getElementById("mypopup")
-    var span = document.getElementsByClassName("close")[0];
-
-    butao.onclick = function() {
-    popup.style.display = "block";
-    }
-
-// When the user clicks on <span> (x), close the modal
-span.onclick = function() {
-  popup.style.display = "none";
-}
-
-// When the user clicks anywhere outside of the modal, close it
-window.onclick = function(event) {
-  if (event.target == popup) {
-    popup.style.display = "none";
-  }
-} 
-
-    butao.onclick = function() {
-        popup.style.display = "block"
-    }
-
-function yt(url) {
-  document.getElementById('twitchVideo').src = "";
-  document.getElementById("twitchVideo").style.display = "none";
-  document.getElementById("ytVideo").style.display = "block";
-  document.getElementById('ytVideo').src = url;
-}
-
-function tw(url) {
-  document.getElementById('ytVideo').src = "";
-  document.getElementById('ytVideo').style.display = "none";
-  document.getElementById('twitchVideo').style.display = "block";
-  document.getElementById('twitchVideo').src = url;
-}
-
-function openNav() {
-  document.getElementById("mySidenav").style.width = "350px";
-  document.getElementById("main").style.marginLeft = "350px";
-  document.getElementById("about").style.left = "350px";
-  document.getElementById("about").onclick = closeNav;
-  document.getElementById("about").className = "fa-solid fa-xmark";
-  
-}
-
-/* Set the width of the side navigation to 0 and the left margin of the page content to 0, and the background color of body to white */
-function closeNav() {
-  document.getElementById("mySidenav").style.width = "0";
-  document.getElementById("main").style.marginLeft = "0";
-  document.getElementById("about").style.left = "-45px";
-  document.getElementById("about").onclick = openNav;
-  document.getElementById("about").className = "fa-solid fa-bars";
-} 
-
-</script>
 
 </html> 
