@@ -22,6 +22,7 @@ butao.onclick = function() {
 }
 
 function yt(url) {
+  document.getElementById("tutorial").style.display = "none";
   document.getElementById("twitchVideo").src = "";
   document.getElementById("twitchVideo").style.display = "none";
   document.getElementById("ytVideo").style.display = "block";
@@ -29,6 +30,7 @@ function yt(url) {
 }
 
 function tw(url) {
+  document.getElementById("tutorial").style.display = "none";
   document.getElementById("ytVideo").src = "";
   document.getElementById("ytVideo").style.display = "none";
   document.getElementById("twitchVideo").style.display = "block";
