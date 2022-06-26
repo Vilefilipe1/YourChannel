@@ -58,8 +58,8 @@
         <button onclick="openNav()" href="#" id="about" class="fa-solid fa-bars"></button>
       </div> 
       <div style="height:100vh;min-width:100vh;overflow:hidden;position:relative">
-          <div id="twitchplayer"><iframe id="twitchVideo" style="position: absolute; top: 0px; left: 0px" src="" allow="picture-in-picture; fullscreen"  width="100%" height="100%" frameborder="0"></iframe></div>
-          <div id="ytplayer"><iframe id="ytVideo" src="" height="100%" width="100%" allowfullscreen allow="autoplay;fullscreen" title="Iframe Example" ></iframe></div>
+          <iframe id="twitchVideo" style="position: absolute; top: 0px; left: 0px" src="" allow="picture-in-picture; fullscreen"  width="100%" height="100%" frameborder="0"></iframe>
+          <iframe id="ytVideo" src="" height="100%" width="100%" allowfullscreen allow="autoplay;fullscreen" title="Iframe Example" ></iframe>
       </div>
   </section>
   </body>
@@ -121,8 +121,8 @@ window.onclick = function(event) {
 
 function yt(url) {
   document.getElementById('twitchVideo').src = "";
-  document.getElemensByID("twitchplayer").style.display = "none";
-  document.getElementById("ytplayer").style.display = "block";
+  document.getElementById("twitchVideo").style.display = "none";
+  document.getElementById("ytVideo").style.display = "block";
   document.getElementById('ytVideo').src = url;
 }
 
