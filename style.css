@@ -33,6 +33,14 @@ body {
     right: 25px;
 
   }
+
+  #ytVideo {
+    display: none;
+  }
+
+  #twitchVideo {
+    display: none;
+  }
   
   .button {
     padding: 14px 40px;
